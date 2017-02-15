@@ -1,13 +1,10 @@
 import React from 'react';
 import Header from '../header';
 
-const Main = (props) => (
+const Home = (props) => (
   <div className='pageBody'>
     <div className="ui inverted vertical masthead center aligned segment" id="header">
-      <Header
-        navigateTo={props.navigateTo}
-        page={props.page}
-      />
+      <Header page='Home' />
       <div className="ui container">
         <div className="ui inverted text container">
           <h1 className="ui inverted header">Welcome to my page</h1>
@@ -25,4 +22,4 @@ const Main = (props) => (
   </div>
 );
 
-export default Main;
+export default Home;

@@ -4,10 +4,7 @@ import Header from '../header';
 const Projects = (props) => (
   <div className='pageBody'>
     <div className="ui inverted vertical masthead center aligned segment" id="header">
-      <Header
-        navigateTo={props.navigateTo}
-        page={props.page}
-      />
+      <Header page='Projects' />
       <div className="ui container">
         <div className="ui inverted text container">
         <h1 className="ui inverted header">Here are some of my nifty projects!</h1>
