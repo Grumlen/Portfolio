@@ -2,7 +2,7 @@ import React from 'react';
 
 const Header = (props) => (
   <div className='ui container'>
-    <div className="ui inverted large menu">
+    <div className="ui inverted secondary pointing large menu">
       <a className={props.page==='Home' ? "active item" : "item"} onClick={props.navigateTo}>Home</a>
       <a className={props.page==='About Me' ? "active item" : "item"} onClick={props.navigateTo}>About Me</a>
       <a className={props.page==='Projects' ? "active item" : "item"} onClick={props.navigateTo}>Projects</a>

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './App.css';
-import Header from './header';
 import Footer from './footer';
 import Home from './home';
 import About from './about';
@@ -26,14 +25,19 @@ class App extends Component {
 
   render() {
     return (
-      <div>
-        <Header
-          navigateTo={this.navigateTo}
-          page={this.state.page}
-        />
-        {this.state.page==='Home' ? <Home /> : null}
-        {this.state.page==='About Me' ? <About /> : null}
-        {this.state.page==='Projects' ? <Projects /> : null}
+      <div id='App'>
+        {this.state.page==='Home' ? <Home
+                                      navigateTo={this.navigateTo}
+                                      page={this.state.page}
+                                    /> : null}
+        {this.state.page==='About Me' ? <About
+                                          navigateTo={this.navigateTo}
+                                          page={this.state.page}
+                                        /> : null}
+        {this.state.page==='Projects' ? <Projects
+                                          navigateTo={this.navigateTo}
+                                          page={this.state.page}
+                                        /> : null}
         <Footer />
       </div>
     );

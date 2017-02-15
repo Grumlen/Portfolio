@@ -1,12 +1,17 @@
 import React from 'react';
+import Header from '../header';
 
 const Main = (props) => (
-  <div>
+  <div className='pageBody'>
     <div className="ui inverted vertical masthead center aligned segment" id="header">
+      <Header
+        navigateTo={props.navigateTo}
+        page={props.page}
+      />
       <div className="ui container">
         <div className="ui inverted text container">
           <h1 className="ui inverted header">Welcome to my page</h1>
-          <h2>This will be my portfolio once I accomplish anything.</h2>
+          <h2 className='sub'>This will be my portfolio once I accomplish anything.</h2>
         </div>
       </div>
     </div>

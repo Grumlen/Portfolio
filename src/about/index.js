@@ -1,8 +1,13 @@
 import React from 'react';
+import Header from '../header';
 
 const About = (props) => (
-  <div>
-    <div className="ui inverted center aligned segment" id="header">
+  <div className='pageBody'>
+    <div className="ui inverted vertical masthead center aligned segment" id="header">
+      <Header
+        navigateTo={props.navigateTo}
+        page={props.page}
+      />
       <div className="ui container">
         <div className="ui inverted text container">
         <h1 className="ui inverted header">Time to celebrate me!</h1>
@@ -10,11 +15,12 @@ const About = (props) => (
         </div>
       </div>
     </div>
+    <div className="gradientstrip header"></div>
     <div className="ui vertical stripe container">
       <div className="ui two column stackable grid">
         <div className="column"><div className="ui segment">
           <h3 className="ui header">Graduate of Texas Tech</h3>
-          <p>Finished in 2010 with a B.S in Mathematics, but I knew something didn't add up when I didn't get tons of job offers. I also had a very strong minor in Physics.</p>
+          <p>Finished in 2010 with a B.S. in Mathematics, but I knew something didn't add up when I didn't get tons of job offers. I also had a very strong minor in Physics.</p>
         </div></div>
         <div className="column"><div className="ui segment">
           <h3 className="ui header">Veteran of the US Navy Reserve</h3>
@@ -22,7 +28,7 @@ const About = (props) => (
         </div></div>
         <div className="column"><div className="ui segment">
           <h3 className="ui header">High School Math Teacher</h3>
-          <p>3 and half years experience teaching children from age 14 to 18 everything they never knew they did not want to know about math. This includes, but is not limited, to: Algebra 1, Geometry, Algebra 2, Math Models, Pre-Calculus, and Personal Finance.</p>
+          <p>3 and half years experience teaching high schoolers everything they never knew they did not want to know about math. This includes, but is not limited, to: Algebra 1, Geometry, Algebra 2, Math Models, Pre-Calculus, and Personal Finance.</p>
         </div></div>
         <div className="column"><div className="ui segment">
           <h3 className="ui header">UI/UX Developer</h3>
