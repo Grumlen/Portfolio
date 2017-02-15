@@ -27,7 +27,10 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Header navigateTo={this.navigateTo} />
+        <Header
+          navigateTo={this.navigateTo}
+          page={this.state.page}
+        />
         {this.state.page==='Home' ? <Home /> : null}
         {this.state.page==='About Me' ? <About /> : null}
         {this.state.page==='Projects' ? <Projects /> : null}

@@ -2,10 +2,10 @@ import React from 'react';
 
 const About = (props) => (
   <div>
-    <div className="ui inverted vertical masthead center aligned segment" id="header">
+    <div className="ui inverted center aligned segment" id="header">
       <div className="ui container">
         <div className="ui inverted text container">
-        <h1 class="ui inverted header">Time to celebrate me!</h1>
+        <h1 className="ui inverted header">Time to celebrate me!</h1>
         <h2>But be careful about feeding the ego: It bites.</h2>
         </div>
       </div>
