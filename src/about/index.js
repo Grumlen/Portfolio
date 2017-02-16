@@ -3,15 +3,11 @@ import Header from '../header';
 
 const About = (props) => (
   <div className='pageBody'>
-    <div className="ui inverted vertical masthead center aligned segment" id="header">
-      <Header page='About Me' />
-      <div className="ui container">
-        <div className="ui inverted text container">
-        <h1 className="ui inverted header">Time to celebrate me!</h1>
-        <h2>But be careful about feeding the ego: It bites.</h2>
-        </div>
-      </div>
-    </div>
+    <Header
+      page='About Me'
+      title='Time to celebrate me!'
+      content='But be careful about feeding the ego: It bites.'
+    />
     <div className="gradientstrip header"></div>
     <div className="ui vertical stripe container">
       <div className="ui two column stackable grid">
