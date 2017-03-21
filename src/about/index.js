@@ -25,7 +25,7 @@ const About = (props) => (
         </div></div>
         <div className="column"><div className="ui segment">
           <h3 className="ui header">UI/UX Developer</h3>
-          <p>Training with Ksquare to learn HTML, CSS, and Javascript. Evidence of this learning can be found on my <a href="projects.html">projects</a> page.</p>
+          <p>Training with Ksquare to learn HTML, CSS, and Javascript. Evidence of this learning can be found on my projects page.</p>
         </div></div>
       </div>
     </div>
