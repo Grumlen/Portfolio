@@ -12,10 +12,10 @@ class App extends Component {
       <Router>
         <div id='App'>
           <Switch>
-            <Route exact path='/portfolio' component={Home} />
+            <Route exact path='/Portfolio' component={Home} />
             <Route path='/about' component={About} />
             <Route path='/projects' component={Projects} />
-            <Route><Redirect to='/portfolio' /></Route>
+            <Route><Redirect to='/Portfolio' /></Route>
           </Switch>
           <Footer />
         </div>
